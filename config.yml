@@ -1,0 +1,26 @@
+logging:
+  level: INFO
+  loggers:
+    com.bazaarvoice.adaptor: DEBUG
+
+rolodexService:
+    ostrichServiceName: rolodex.api
+    apiKey: test123
+
+maxRetries: 5
+
+rolodexReadTimeoutMs: 600000
+
+exponentialBackoffRetryBaseSleepTimeMs: 500
+exponentialBackoffRetryMaxSleepTimeMs: 5000
+
+boundedExponentialBackoffRetryBaseSleepTimeMs: 100
+boundedExponentialBackoffRetryMaxSleepTimeMs: 1000
+
+server:
+  type: simple
+  applicationContextPath: /application
+  adminContextPath: /admin
+  connector:
+    type: http
+    port: 8095
