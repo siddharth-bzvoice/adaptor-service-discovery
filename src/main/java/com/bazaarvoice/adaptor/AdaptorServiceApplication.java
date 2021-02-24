@@ -75,7 +75,7 @@ public class AdaptorServiceApplication extends Application<AdaptorServiceConfigu
         final Set<MessageHandler> handlers = new HashSet<>();
         handlers.add(handler);
 
-        BasicAWSCredentials awsCreds = new BasicAWSCredentials("AKIA6KTOWI3HURVTO5BA", "Tr7J9XNpt7l8m8cw/fJnfLkof1zv65uL1WYSkEyT");
+        BasicAWSCredentials awsCreds = new BasicAWSCredentials("****", "****");
 
         AmazonSQS sqs =  AmazonSQSClientBuilder.standard()
                 .withCredentials(new AWSStaticCredentialsProvider(awsCreds))
